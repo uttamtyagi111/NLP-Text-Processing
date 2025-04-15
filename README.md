@@ -32,23 +32,23 @@ Google was founded by Larry Page and Sergey Brin while they were Ph.D. students 
 
 #3. Example Output
 json{
-  "original_text": "Google was founded by Larry Page and Sergey Brin while they were Ph.D. students at Stanford University. The company is headquartered in Mountain View, California and has offices around the world.",
-  "cleaned_text": "google founded larry page sergey brin phd students stanford university company headquartered mountain view california offices world",
-  "analysis": {
-    "total_tokens": 17,
-    "top_words": {
-      "google": 1,
-      "founded": 1,
-      "larry": 1,
-      "page": 1,
-      "sergey": 1
-    }
-  },
-  "named_entities": {
-    "ORG": ["Google", "Stanford University"],
-    "PERSON": ["Larry Page", "Sergey Brin"],
-    "GPE": ["Mountain View", "California"]
-  }
+"original_text": "Google was founded by Larry Page and Sergey Brin while they were Ph.D. students at Stanford University. The company is headquartered in Mountain View, California and has offices around the world.",
+"cleaned_text": "google founded larry page sergey brin phd students stanford university company headquartered mountain view california offices world",
+"analysis": {
+"total_tokens": 17,
+"top_words": {
+"google": 1,
+"founded": 1,
+"larry": 1,
+"page": 1,
+"sergey": 1
+}
+},
+"named_entities": {
+"ORG": ["Google", "Stanford University"],
+"PERSON": ["Larry Page", "Sergey Brin"],
+"GPE": ["Mountain View", "California"]
+}
 }
 
 #How It Works

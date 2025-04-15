@@ -1,21 +1,14 @@
+#This code is a simple NLP processor that uses spaCy to analyze text input by the user. 
+#It cleans the text, tokenizes it, counts word frequencies, and extracts named entities. 
+#The results are printed in a structured JSON format.
+#The code includes error handling for loading the spaCy model and provides a sample text if no input is given.
+
 import spacy
 import json
 import re
 from collections import Counter
 
 def process_text(text):
-    """
-    Process text using NLP techniques:
-    1. Clean text (remove punctuation, lowercase, remove stopwords)
-    2. Tokenize and calculate word frequencies
-    3. Extract named entities
-    
-    Args:
-        text (str): Raw input text
-        
-    Returns:
-        dict: Dictionary containing all processing results
-    """
     # Load spaCy model
     try:
         nlp = spacy.load("en_core_web_sm")
@@ -51,7 +44,6 @@ def process_text(text):
         if entity_type in entities:
             filtered_entities[entity_type] = entities[entity_type]
     
-    # Compile results
     results = {
         "original_text": text,
         "cleaned_text": " ".join(tokens),
@@ -87,3 +79,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+    
+    
